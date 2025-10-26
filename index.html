@@ -29,8 +29,8 @@
                     },
                     colors: {
                         'primary-purple': '#8e7cc3',
-                        'dark-gray': '#333333',
-                        'light-gray-bg': '#EEEEEE',
+                        'dark-gray': '#000000',
+                        'light-gray-bg': '#5D3A6b',
                         'dark-purple': '#5D3A6B',
                         'accent-gold': '#ffd700',
                         'theme-lila': '#EADCF8',
@@ -49,7 +49,7 @@
             <h3 class="font-great-vibes text-6xl text-primary-pink mb-6">¡Bienvenidos!</h3>
             <p class="font-inter text-lg text-dark-gray mb-8">🌺 Hay un sonido que forma parte de esta experiencia… ¿Te gustaría escucharlo?</p>
             <div class="flex justify-center gap-4">
-                <button id="playMusicButtonModal" class="bg-primary-pink hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                <button id="playMusicButtonModal" class="bg-green-500 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
                     Sí, ¡claro!
                 </button>
                 <button id="noMusicButtonModal" class="bg-gray-400 hover:bg-gray-500 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
@@ -63,10 +63,10 @@
         <i class="fas fa-music"></i> 
     </button>
     <audio id="music" loop preload="auto">
-        <source src="./assets/audio/CarlosRivera-OtrasVidas.mp3" type="audio/mpeg">
+        <source src="./assets/audio/Veo_en_ti_la_luz-Chayanne.mp3" type="audio/mpeg">
         Tu navegador no soporta la etiqueta audio de...
     </audio>
-    <div class="max-w-screen-xl mx-auto bg-white shadow-lg overflow-hidden">
+    <div class="max-w-screen-xl mx-auto bg-white shadow-lg overflow-hidden text-with-shadow">
         
         <section id="portada" class="relative h-screen flex flex-col items-center justify-center text-center text-white overflow-hidden">
             <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
@@ -77,9 +77,9 @@
             <div class="absolute inset-0 bg-black opacity-40"></div>
 
             <div class="relative z-10 p-8">
-                <h1 class="font-great-vibes tracking-wide text-6xl sm:text-7xl md:text-8xl mb-4 drop-shadow-lg" data-aos="zoom-in" data-aos-duration="1500">Belen & Agustin</h1>
-                <p class="font-kalam text-3xl sm:text-4xl md:text-5xl drop-shadow-md" data-aos="fade-right" data-aos-delay="500">¡Nos Casamos!</p>
-                <p class="font-kalam mt-8 text-xl sm:text-2xl font-light" data-aos="fade-left" data-aos-delay="1000">Con amor los invitamos a compartir este día tan especial.</p>
+                <h1 class="font-great-vibes tracking-wide text-6xl sm:text-7xl md:text-8xl mb-4 drop-shadow-lg" data-aos="zoom-in" data-aos-duration="1500">Zoe Parra</h1>
+                <p class="font-kalam text-3xl sm:text-4xl md:text-5xl drop-shadow-md" data-aos="fade-right" data-aos-delay="500">¡Mis 15 años!</p>
+                <p class="font-kalam mt-8 text-xl sm:text-2xl font-light" data-aos="fade-left" data-aos-delay="1000">Con cariño te invito a compartir este día tan especial.</p>
             </div>
 
             <div class="absolute bottom-8 z-10 flex flex-col items-center text-white text-lg">
@@ -89,44 +89,31 @@
             </section>
         
             <div class="bg-dark-purple bg-contain bg-no-repeat bg-center bg-fixed" style="background-image: url('./assets/img/main_section_background.png');">
-            
-            <section id="ceremonia-civil" class="relative py-16 px-6 bg-light-gray-bg/50 text-center">
-                <div class="relative z-10 max-w-3xl mx-auto">
-                    <img src="./assets/img/check.gif" alt="Registro Civil" class="rounded-full w-56 h-56 mb-6 mx-auto" data-aos="flip-up" data-aos-duration="1000">
-                    <h2 class="font-great-vibes text-6xl sm:text-6xl mb-6 text-primary-pink" data-aos="fade-up" data-aos-delay="200">Ceremonia Civil</h2>
-                    <p class="text-xl sm:text-2xl font-light mb-4"><span>LUGAR:</span> Registro Civil Villa Lujan</p>                      <p class="text-xl sm:text-2xl font-light mb-4" data-aos="fade-up" data-aos-delay="400"><span>UBICACIÓN:</span> Sgto. Cabral 261, San Miguel de Tucuman</p>
-                    <p class="text-xl sm:text-2xl font-light mb-8" data-aos="fade-up" data-aos-delay="500"><span>DIA:</span> 26/09/2025</p>
-                    <p class="text-xl sm:text-2xl font-light mb-8" data-aos="fade-up" data-aos-delay="600"><span >HORARIO:</span> 11:00 HS</p>
-                    <a href="https://maps.app.goo.gl/r8iQ5wmW2oxKVbRv5" target="_blank" class="inline-block bg-primary-pink hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105" data-aos="zoom-in" data-aos-delay="700">
-                        CÓMO LLEGAR
-                    </a>
-                </div>
-            </section>
 
             <section id="ceremonia-religiosa" class="relative py-16 px-6 bg-dark-gray/50 text-white text-center">
                 
                 <div class="relative z-10 max-w-3xl mx-auto">
-                    <img src="./assets/img/iglesia.gif" alt="Iglesia" class="rounded-full w-56 h-56 mb-6 mx-auto" data-aos="flip-up" data-aos-duration="1000">
+                    <img src="./assets/img/iglesia.png" alt="Iglesia" class="rounded-full w-56 h-56 mb-6 mx-auto animate-pulse" data-aos="flip-up" data-aos-duration="1000">
                     <h2 class="font-great-vibes text-5xl sm:text-6xl mb-6 text-primary-pink" data-aos="fade-up" data-aos-delay="200">Ceremonia Religiosa</h2>
-                    <p class="text-xl sm:text-2xl font-light mb-4" data-aos="fade-up" data-aos-delay="300"><span>PARROQUIA:</span> Nuestra Señora de Luján</p>
-                    <p class="text-xl sm:text-2xl font-light mb-4" data-aos="fade-up" data-aos-delay="400"><span>UBICACIÓN:</span> Don bosco 2645 - San Miguel de Tucuman</p>
-                    <p class="text-xl sm:text-2xl font-light mb-8" data-aos="fade-up" data-aos-delay="500"><span>DIA:</span> 27/09/2025</p>
-                    <p class="text-xl sm:text-2xl font-light mb-8" data-aos="fade-up" data-aos-delay="600"><span>HORARIO:</span> 20:00 HS</p>
-                    <a href="https://maps.app.goo.gl/TxFLcJg4VNrbrYSC7" target="_blank" class="inline-block bg-primary-pink hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105" data-aos="zoom-in" data-aos-delay="700">
+                    <p class="text-xl sm:text-2xl font-light mb-4" data-aos="fade-up" data-aos-delay="300"><span>PARROQUIA:</span> LUGAR A DEFINIR</p>
+                    <p class="text-xl sm:text-2xl font-light mb-4" data-aos="fade-up" data-aos-delay="400"><span>UBICACIÓN:</span> Calle 123 - ubicacion desconocida</p>
+                    <p class="text-xl sm:text-2xl font-light mb-8" data-aos="fade-up" data-aos-delay="500"><span>DIA:</span> XX/XX/2025</p>
+                    <p class="text-xl sm:text-2xl font-light mb-8" data-aos="fade-up" data-aos-delay="600"><span>HORARIO:</span> 00:00 HS</p>
+                    <a href="https://maps.app.goo.gl/TxFLcJg4VNrbrYSC7" target="_blank" class="inline-block bg-green-500 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105" data-aos="zoom-in" data-aos-delay="700">
                         CÓMO LLEGAR
                     </a>
                 </div>
             </section>
 
-            <section id="recepcion" class="relative py-16 px-6 bg-light-gray-bg/50 text-dark-gray text-center">
+            <section id="recepcion" class="relative py-16 px-6 text-white text-center ">
                 <div class="max-w-3xl mx-auto">
-                    <img src="./assets/img/reciencasados.gif" alt="recien casados" class="rounded-full w-56 h-56 mb-6 mx-auto" data-aos="flip-up" data-aos-duration="1000">
+                    <img src="./assets/img/reciencasados.png" alt="recien casados" class="rounded-full w-56 h-56 mb-6 mx-auto animate-pulse" data-aos="flip-up" data-aos-duration="1000">
                     <h2 class="font-great-vibes text-5xl sm:text-6xl text-primary-pink mb-6" data-aos="fade-up" data-aos-delay="200">Fiesta</h2>
-                    <p class="text-xl sm:text-2xl font-light mb-4" data-aos="fade-up" data-aos-delay="300"><span >SALÓN:</span> ACIT </p>
-                    <p class="text-xl sm:text-2xl font-light mb-4" data-aos="fade-up" data-aos-delay="400"><span>UBICACIÓN:</span> av. Aconquija 867, Yerba buena</p>
-                    <p class="text-xl sm:text-2xl font-light mb-8" data-aos="fade-up" data-aos-delay="500"><span>DIA:</span> 27/09/2025</p>
-                    <p class="text-xl sm:text-2xl font-light mb-8" data-aos="fade-up" data-aos-delay="600"><span>HORARIO:</span> 21:45 HS ¡Puntual!</p>
-                    <a href="https://maps.app.goo.gl/XFhReTtTYKPCjYYY8" target="_blank" class="inline-block bg-primary-pink hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105" data-aos="zoom-in" data-aos-delay="700">
+                    <p class="text-xl sm:text-2xl font-light mb-4" data-aos="fade-up" data-aos-delay="300"><span >SALÓN:</span> La soñada </p>
+                    <p class="text-xl sm:text-2xl font-light mb-4" data-aos="fade-up" data-aos-delay="400"><span>UBICACIÓN:</span> frias Silva 70, SM Tuc</p>
+                    <p class="text-xl sm:text-2xl font-light mb-8" data-aos="fade-up" data-aos-delay="500"><span>DIA:</span> 15/11/2025</p>
+                    <p class="text-xl sm:text-2xl font-light mb-8" data-aos="fade-up" data-aos-delay="600"><span>HORARIO:</span> 22:00 HS ¡Puntual!</p>
+                    <a href="https://maps.app.goo.gl/KuYiMs4MTnYcZEVP9" target="_blank" class="inline-block bg-green-500 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105" data-aos="zoom-in" data-aos-delay="700">
                         VER UBICACIÓN
                     </a>
                 </div>
@@ -154,19 +141,19 @@
                             <span class="text-lg mt-2 font-medium text-gray-600">Segundos</span>
                         </div>
                     </div>
-                    <p class="mt-12 text-lg sm:text-xl max-w-2xl mx-auto font-inter leading-relaxed" data-aos="fade-in" data-aos-delay="500"><span>Con vos compartiendo este momento, será aún más significativo. ¡Nos alegra recibirte!</span></p>
+                    <p class="mt-12 text-lg sm:text-xl max-w-2xl mx-auto font-inter leading-relaxed" data-aos="fade-in" data-aos-delay="500"><span>Con vos compartiendo este momento, será aún más significativo. ¡Te espero!</span></p>
                 </div>
             </section>
 
-            <section id="confirmacion" class="relative py-16 px-6 bg-light-gray-bg/50 text-center">
+            <section id="confirmacion" class="relative py-16 px-6 bg-light-gray-bg/50 text-white text-center">
                 
                 <div class="relative z-10 max-w-3xl mx-auto">
-                    <img src="./assets/img/sobre.gif" alt="sobre" class="rounded-full w-56 h-56 mb-6 mx-auto" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="./assets/img/sobre_morado.jpg" alt="sobre_morado" class="rounded-full w-56 h-56 mb-6 mx-auto animate-pulse" data-aos="zoom-in" data-aos-duration="1000">
                     <h2 class="font-great-vibes text-5xl sm:text-6xl mb-6 text-primary-pink" data-aos="fade-right" data-aos-delay="200">Confirmá tu Asistencia</h2>
-                    <p class="text-xl sm:text-2xl font-light mb-8" data-aos="fade-left" data-aos-delay="400">¡Tu presencia es muy importante para nosotros! Por favor, confirmanos tu asistencia antes del <span>25 de Agosto</span>.</p>
+                    <p class="text-xl sm:text-2xl font-light mb-8" data-aos="fade-left" data-aos-delay="400">¡Tu presencia es muy importante para mí! Por favor, confirmá tu asistencia antes del <span>XXXXXXXX</span>.</p>
                     <p class="text-xl sm:text-2xl font-light mb-8" data-aos="fade-left" data-aos-delay="400">Si además querés compartirnos alguna indicación sobre tu alimentación, podés hacerlo en el mismo enlace.
                     </p>
-                    <a href="https://forms.gle/Xc7JyL55tHNp3XUy9" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105" data-aos="zoom-in" data-aos-delay="600">
+                    <a href="https://forms.gle/7wJVRYS2sPjNWgJG9" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105" data-aos="zoom-in" data-aos-delay="600">
                         CONFIRMAR ASISTENCIA
                     </a>
                 </div>
@@ -174,25 +161,27 @@
 
             <section id="dress-code-section" class="relative py-16 px-6 bg-dark-gray/50 text-white text-center">
                 <div class="max-w-3xl mx-auto">
-                    <img src="./assets/img/ropa_traje_vestido.jpg" alt="Dress Code" class="rounded-full w-56 h-56 mb-6 mx-auto" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="./assets/img/camaleon.jpg" alt="Dress Code" class="rounded-full w-56 h-56 mb-6 mx-auto animate-pulse" data-aos="zoom-in" data-aos-duration="1000">
                     <h2 class="font-great-vibes text-5xl sm:text-6xl text-primary-pink mb-6" data-aos="fade-up" data-aos-delay="200">Dress Code</h2>
                     <p class="text-xl sm:text-2xl font-light mb-4" data-aos="fade-up" data-aos-delay="400">Pedimos asistir con vestimenta **Elegante**.</p>
                 </div>
             </section>
 
-            <section id="regalos" class="relative py-16 px-6 bg-light-gray-bg/50 text-dark-gray text-center">
+            <section id="regalos" class="relative py-16 px-6 bg-light-gray-bg/50 text-white text-center">
                 <div class="max-w-3xl mx-auto">
-                    <img src="./assets/img/gifbox.gif" alt="caja de regalos" class="rounded-full w-56 h-56 mb-6 mx-auto" data-aos="flip-right" data-aos-duration="1000">
+                    <img src="./assets/img/gifbox.gif" alt="caja de regalos" class="rounded-full w-56 h-56 mb-6 mx-auto animate-pulse" data-aos="flip-right" data-aos-duration="1000">
                     <h2 class="font-great-vibes text-5xl sm:text-6xl text-primary-pink mb-6" data-aos="fade-down" data-aos-delay="200">Regalos</h2>
-                    <p class="text-xl sm:text-2xl font-light mb-8 font-bold" data-aos="fade-up" data-aos-delay="400">Tu regalo es tu presencia. Si deseas hacernos un aporte a nuestra nueva etapa sería un gran detalle, te lo agradecemos.</p>
-                    <p class="text-xl sm:text-2xl font-light mb-8"> <span>CBU: 0000003100009496507226</span></p>
+                    <p class="text-xl sm:text-2xl font-light mb-8 font-bold" data-aos="fade-up" data-aos-delay="400">Tu presencia es el mejor regalo en este día tan especial.
+                        Si querés acompañarme con un detalle para esta nueva etapa, lo voy a recibir con mucho cariño. ¡Gracias por ser parte de este momento!
+                        </p>
+                    <p class="text-xl sm:text-2xl font-light mb-8"> <span>CBU: xxxxxxxxxxxxxxxxxxx</span></p>
                 </div>
             </section>
 
             <section id="book" class="relative py-16 px-6 bg-dark-gray/50 text-white text-center">
                 <div class="max-w-3xl mx-auto">
-                    <h2 class="font-great-vibes text-5xl sm:text-6xl text-primary-pink mb-6" data-aos="fade-up" data-aos-duration="1000">Nosotros ♥</h2>
-                    <p class="text-xl sm:text-2xl font-light mb-8 font-bold" data-aos="fade-left" data-aos-delay="500">Cada Historia de amor es diferente, Pero la nuestra es Unica!</p>
+                    <h2 class="font-great-vibes text-5xl sm:text-6xl text-primary-pink mb-6" data-aos="fade-up" data-aos-duration="1000">Un momento único ♥</h2>
+                    <p class="text-xl sm:text-2xl font-light mb-8 font-bold" data-aos="fade-left" data-aos-delay="500">Entre luces, risas y sueños, este día se convierte en recuerdo. Y vos sos parte de él.</p>
                     
                     <div class="slider" data-aos="fade-up" data-aos-delay="800">
                         <ul>
@@ -206,7 +195,25 @@
                                 <img src="./assets/img/foto3.jpg" alt="foto 3">
                             </li>
                             <li>
+                                <img src="./assets/img/foto4.jpg" alt="foto 4">
+                            </li>
+                            <li>
+                                <img src="./assets/img/foto5.jpg" alt="foto 5">
+                            </li>
+                            <li>
+                                <img src="./assets/img/foto6.jpg" alt="foto 6">
+                            </li>
+                            <li>
                                 <img src="./assets/img/foto7.jpg" alt="foto 7">
+                            </li>
+                            <li>
+                                <img src="./assets/img/foto8.jpg" alt="foto 8">
+                            </li>
+                            <li>
+                                <img src="./assets/img/foto9.jpg" alt="foto 9">
+                            </li>
+                            <li>
+                                <img src="./assets/img/foto10.jpg" alt="foto 10">
                             </li>
                         </ul>
                     </div>
@@ -214,7 +221,7 @@
                     <br>
                     
                     <span data-aos="zoom-in" data-aos-delay="1200">
-                        <a href="https://photos.app.goo.gl/29d3orxp9gh2Jgia6" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                        <a href="https://photos.app.goo.gl/xPZsvqSRjyyzjctU8" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
                             Compartí tus fotos
                         </a>
                     </span>
@@ -224,7 +231,7 @@
             <section id="footer" class="relative py-16 px-6 bg-dark-gray/70 text-white text-center">
                 <div class="max-w-3xl mx-auto">
                     <h2 class="font-great-vibes text-5xl sm:text-6xl mb-6" >¡Gracias!</h2>
-                    <p class="text-xl sm:text-2xl font-light mb-4" >Belen & Agustin</p>
+                    <p class="text-xl sm:text-2xl font-light mb-4" >Zoe Parra</p>
                     <p class="text-md sm:text-lg opacity-80 mt-8" >© 2025 - Todos los derechos reservados.</p>
                     <p class="text-md sm:text-lg opacity-80 mt-8" >Fabian Bernardino</p>
                     <a href="https://wa.me/5493813852485" target="_blank">

@@ -177,27 +177,20 @@ h2 {
 /* Animación para un pulso sutil y elegante */
 @keyframes pulse-effect {
     0% {
-      transform: scale(1);
-      /* LA CORRECCIÓN: Empezamos con una sombra ya transparente */
-      box-shadow: 0 0 0 0 rgba(255, 105, 180, 0.7); 
+      transform: scale(1); /* Tamaño normal */
     }
-    70% {
-      transform: scale(1.05); /* Un poco más sutil para que sea más elegante */
-      /* La sombra se expande y se desvanece por completo */
-      box-shadow: 0 0 40px 15px rgba(255, 105, 180, 0); 
+    50% {
+      transform: scale(1.1); /* Ligeramente más grande */
     }
     100% {
-      transform: scale(1);
-      /* Nos aseguramos de que termine transparente */
-      box-shadow: 0 0 0 0 rgba(255, 105, 180, 0);
+      transform: scale(1); /* Vuelve al tamaño normal */
     }
   }
-  
-  /* Esta parte déjala como está, funciona perfecto */
+   
+  /* La clase para aplicar la animación no cambia */
   [data-aos].animate-pulse {
-    animation: pulse-effect 4s ease-in-out infinite;
+    animation: pulse-effect 3s ease-in-out infinite;
   }
-
 
 .text-with-shadow span, .text-with-shadow {
     text-shadow: 5px 5px 10px rgb(0, 0, 0);

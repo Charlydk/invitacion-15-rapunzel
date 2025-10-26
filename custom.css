@@ -181,8 +181,8 @@ h2 {
       box-shadow: 0 0 0 0 rgb(255, 105, 180); /* Sombra rosada, invisible */
     }
     70% {
-      transform: scale(1.05); /* Ligeramente más grande */
-      box-shadow: 0 0 10px 40px rgba(255, 105, 180, 0); /* Sombra se expande y desaparece */
+      transform: scale(1.10); /* Ligeramente más grande */
+      box-shadow: 0 0 50px 20px rgba(255, 105, 180, 0); /* Sombra se expande y desaparece */
     }
     100% {
       transform: scale(1); /* Vuelve al tamaño normal */
@@ -194,7 +194,7 @@ h2 {
     La clave es usar [data-aos].animate-pulse para darle más prioridad.
   */
   [data-aos].animate-pulse {
-    animation: pulse-effect 3s ease-in-out infinite;
+    animation: pulse-effect 4s ease-in-out infinite;
   }
 
 

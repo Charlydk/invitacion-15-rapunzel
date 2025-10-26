@@ -177,22 +177,23 @@ h2 {
 /* Animación para un pulso sutil y elegante */
 @keyframes pulse-effect {
     0% {
-      transform: scale(1); /* Tamaño normal */
-      box-shadow: 0 0 0 0 rgb(255, 105, 180); /* Sombra rosada, invisible */
+      transform: scale(1);
+      /* LA CORRECCIÓN: Empezamos con una sombra ya transparente */
+      box-shadow: 0 0 0 0 rgba(255, 105, 180, 0.7); 
     }
     70% {
-      transform: scale(1.10); /* Ligeramente más grande */
-      box-shadow: 0 0 50px 20px rgba(255, 105, 180, 0); /* Sombra se expande y desaparece */
+      transform: scale(1.05); /* Un poco más sutil para que sea más elegante */
+      /* La sombra se expande y se desvanece por completo */
+      box-shadow: 0 0 40px 15px rgba(255, 105, 180, 0); 
     }
     100% {
-      transform: scale(1); /* Vuelve al tamaño normal */
+      transform: scale(1);
+      /* Nos aseguramos de que termine transparente */
       box-shadow: 0 0 0 0 rgba(255, 105, 180, 0);
     }
   }
   
-  /* Clase para aplicar la animación.
-    La clave es usar [data-aos].animate-pulse para darle más prioridad.
-  */
+  /* Esta parte déjala como está, funciona perfecto */
   [data-aos].animate-pulse {
     animation: pulse-effect 4s ease-in-out infinite;
   }

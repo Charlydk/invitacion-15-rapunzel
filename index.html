@@ -44,6 +44,10 @@
 </head>
 <body class="font-dm-sans text-black bg-light-gray-bg tracking-wide min-h-screen antialiased">
 
+    <div id="preloader" class="fixed inset-0 bg-dark-purple z-[9999] flex justify-center items-center">
+        <div class="loader"></div>
+    </div>
+    
     <div id="welcomeModal" class="modal-overlay">
         <div class="modal-content">
             <h3 class="font-great-vibes text-6xl text-primary-pink mb-6">¡Bienvenidos!</h3>
@@ -218,8 +222,10 @@
                         </ul>
                     </div>
 
+
                     <br>
                     
+
                     <span data-aos="zoom-in" data-aos-delay="1200">
                         <a href="https://photos.app.goo.gl/xPZsvqSRjyyzjctU8" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
                             Compartí tus fotos
@@ -253,6 +259,7 @@
         });
     </script>
     
+    <script src="./js/Preloader.js"></script>
     <script src="./js/Countdown.js"></script>
     <script src="./js/Music.js"></script>
 

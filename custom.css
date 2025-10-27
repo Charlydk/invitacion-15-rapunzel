@@ -187,9 +187,24 @@ h2 {
     }
   }
    
-  /* La clase para aplicar la animación no cambia */
+
   [data-aos].animate-pulse {
     animation: pulse-effect 3s ease-in-out infinite;
+  }
+
+
+  .loader {
+    border: 8px solid #f3f3f320; /* Borde gris claro transparente */
+    border-top: 8px solid #FF69B4; /* Borde rosa (tu primary-pink) */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }
 
 .text-with-shadow span, .text-with-shadow {
